@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Google Tag Manager for WordPress by gtm4wp.com -->
     <script type="text/javascript" async=""
@@ -3066,6 +3067,64 @@
             color: white;
         }
 
+        .redesign-menu .menu-toggle {
+            display: none;
+
+        }
+
+
+        /* Adicione os estilos para tornar o menu responsivo */
+        @media only screen and (max-width: 768px) {
+            .redesign-menu {
+                padding: 8px 20px;
+                /* Ajuste o preenchimento conforme necessário para telas menores */
+            }
+
+            .redesign-menu ul {
+                flex-direction: column;
+                gap: 8px;
+                position: absolute;
+                top: 52px;
+                right: 0;
+                background: rgb(0, 44, 116);
+                width: 100%;
+                display: none !important;
+            }
+
+            .redesign-menu ul.active {
+                display: flex !important;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .redesign-menu ul li {
+                width: 100%;
+                text-align: center;
+            }
+
+            .redesign-menu ul li a {
+                width: 100%;
+            }
+
+            .redesign-menu .menu-toggle {
+                display: block;
+                position: absolute;
+                top: 6px;
+                right: 20px;
+                cursor: pointer;
+                color: white;
+                z-index: 1000;
+                border: none;
+                background: transparent;
+                font-size: 30px;
+            }
+
+            .redesign-menu:hover ul {
+                display: flex;
+            }
+        }
+
         /* H E R O */
         .redesign-hero {
             background: url('./src/images/Secao-1-1.jpg');
@@ -5338,6 +5397,7 @@
                                                 <menu class="redesign-menu">
                                                     <img decoding="async"
                                                         src="./src/images/Logo-Expertise-branca-R-1.png">
+                                                    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
                                                     <ul>
                                                         <li><a href="#how-it-works">COMO FUNCIONA</a></li>
                                                         <li><a href="#advantages">VANTAGENS</a></li>
@@ -5349,6 +5409,13 @@
                                                         </li>
                                                     </ul>
                                                 </menu>
+
+                                                <script>
+                                                    function toggleMenu() {
+                                                        var menu = document.querySelector('.redesign-menu ul');
+                                                        menu.classList.toggle('active');
+                                                    }
+                                                </script>
                                                 <!--  H E R O  -->
                                                 <main class="redesign-hero">
                                                     <div class="redesign-hero__content">
