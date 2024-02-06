@@ -3212,7 +3212,7 @@ function redirecionarParaOutraPagina() {
         if (nome && email && phone.length >= 10 && phone.length <= 11) {
             // Realizar a chamada AJAX
             jQuery.ajax({
-                url: '/wp-json/agendor-api/v1/submit-form/',
+                url: 'https://grove-fair-plastic.blogs.prod.stage.rock.works/wp-json/agendor-api/v1/submit-form/',
                 type: 'POST',
                 data: {
                     nome: nome,
