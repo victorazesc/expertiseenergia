@@ -1790,13 +1790,14 @@ button[type="submit"]:hover {
 	}
 
 	.redesign-hero div h1 {
-		font-size: 32px;
+		font-size: 1.75em;
 		line-height: 36px;
+		margin-bottom: 1em;
 	}
 
 	.redesign-hero div h4 {
-		font-size: 14px;
-		line-height: 17px;
+		font-size: 0.8rem;
+		line-height: 1.25em;
 		width: 90%;
 	}
 

@@ -112,7 +112,7 @@ function Home() {
           </section>
           <section className="redesign__green-presentation">
             <div className="redesign__green-presentation-item">
-              <img src="images/piggy-bank.svg" width={100} />
+              <img src="images/piggy-bank.svg" />
               <p className="redesign__green-presentation-item--paragraph">
                 Desde 2012, a energia solar já gerou no Brasil mais de R$ 170 bilhões em investimentos. Um projeto bem dimensionado e corretamente instalado pode gerar um rendimento anual de até 40%, superando qualquer aplicação financeira atualmente disponível no mercado.
               </p>
@@ -245,10 +245,10 @@ function Home() {
         <div id="mobileContent">
           {/* <!--  H E R O  --> */}
           <main className="redesign-hero">
-            <img src="images/Foto-Coopersol-2-1-1.png" />
+            <img src="images/carro-autonomo.JPG" />
             <div className="redesign-hero__content">
-              <h1>CONTA DE LUZ BAIXA <br /> + ENERGIA LIMPA?</h1>
-              <h4>Conheça o parque solar da Expertise e <b> comece a economizar de qualquer endereço</b></h4>
+              <h1>VALORIZE SEU IMÓVEl RENDIMENTO ANUAL $ ATÉ 40% <br />RETORNO INVESTIMENTO $ <br /> EM 30 MESES</h1>
+              <h4>Ajude o meio ambiente! Faça a transição para a energia renovável através de um investimento inteligente!</h4>
               <a href="#simulate-mobile">
                 <button className="redesign-hero__button">
                   fazer simulação
@@ -262,27 +262,30 @@ function Home() {
           <span id="how-it-works-mobile"></span>
           {/* <!--  H O W    I T   W O R K S --> */}
           <section className="redesign__section-title">
-            <h5>Como funciona</h5>
-            <h4>A ECONOMIA VAI DO PARQUE SOLAR ATÉ A SUA CASA</h4>
+            <h5>Porque Energia Solar?</h5>
+            <h4>INVESTIMENTO INTELIGENTE QUE AJUDA O PLANETA</h4>
           </section>
           <section className="redesign__green-presentation">
             <div className="redesign__green-presentation-item slide-mobile-green active">
+              <img src="images/piggy-bank.svg" />
               <p className="redesign__green-presentation-item--paragraph">
-                <b>A energia é produzida nas suas placas,</b> instaladas em um de nossos parques solares
+                Desde 2012, a energia solar já gerou no Brasil mais de R$ 170 bilhões em investimentos. Um projeto bem dimensionado e corretamente instalado pode gerar um rendimento anual de até 40%, superando qualquer aplicação financeira atualmente disponível no mercado.
+
               </p>
-              <img src="images/1-1.png" />
             </div>
             <div className="redesign__green-presentation-item slide-mobile-green">
+              <img src="images/profits-analytics.svg" />
               <p className="redesign__green-presentation-item--paragraph">
-                A energia produzida é <b>injetada na rede da distribuidora</b> de energia local
+                Valorize sua propriedade! Milhões de pessoas já instalaram painéis solares nos seus telhados. Junte-se a esse movimento!
+                Estudos apontam que um sistema de energia solar aumenta em 5,1% 0 valor de venda de um imóvel.
               </p>
-              <img src="images/2.png" />
             </div>
             <div className="redesign__green-presentation-item slide-mobile-green">
+              <img src="images/global-globe.svg" />
               <p className="redesign__green-presentation-item--paragraph">
-                Por fim, é <b>convertida em créditos</b> aos usuários do parque que são abatidos do consumo
+                Valorize sua propriedade! Milhões de pessoas já instalaram painéis solares nos seus telhados. Junte-se a esse movimento!
+                Estudos apontam que um sistema de energia solar aumenta em 5,1% 0 valor de venda de um imóvel.
               </p>
-              <img src="images/3.png" />
             </div>
           </section>
           <div className="redesign__green-presentation-options">
@@ -955,6 +958,7 @@ function Testimonials({ showVideoModal, mobile }: any) {
       </section>
     </>
   )
+
 }
 
 export default Home
