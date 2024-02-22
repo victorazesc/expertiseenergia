@@ -240,7 +240,6 @@ function Home() {
                 </div>
               </div>
             </div>
-            <span>teste stg</span>
           </footer>
         </div>
         :
