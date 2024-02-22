@@ -94,8 +94,8 @@ function Home() {
           {/* H E R O*/}
           <main className="redesign-hero">
             <div className="redesign-hero__content">
-              <h1>VALORIZE SEU IMÓVEL <br /> RENDIMENTO ANUAL $ ATÉ 40% <br /> RETORNO INVESTIMENTO $ EM 30 MESES</h1>
-              <h4>Ajude o meio ambiente! Faça a transição para uma matriz energética renovável através de um investimento inteligente!</h4>
+              <h1>VALORIZE SEU IMÓVEl RENDIMENTO ANUAL $ ATÉ 40% <br />RETORNO INVESTIMENTO $ <br /> EM 30 MESES</h1>
+              <h4>Ajude o meio ambiente! Faça a transição para a energia renovável através de um investimento inteligente!</h4>
               <a href="#how-it-works">
                 <img src="images/Frame.png" />
               </a>

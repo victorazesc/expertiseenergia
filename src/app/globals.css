@@ -434,19 +434,18 @@ button[type="submit"]:hover {
 	font-family: 'Oswald';
 	font-style: normal;
 	font-weight: 700;
-	font-size: 64px;
+	font-size: 2.6em;
 	line-height: 72px;
 	text-transform: uppercase;
 	color: #FFFFFF;
-	margin-bottom: 28px;
 }
 
 .redesign-hero div h4 {
 	font-family: 'Inter';
 	font-style: normal;
 	font-weight: 500;
-	font-size: 16px;
-	line-height: 20px;
+	font-size: 1.25em;
+	line-height: 1.5em;
 	margin-bottom: 20px;
 	color: #FFFFFF;
 }
@@ -535,8 +534,9 @@ button[type="submit"]:hover {
 .redesign__green-presentation-item--paragraph {
 	font-family: 'Inter';
 	font-style: normal;
-	font-size: 16px;
-	line-height: 19px;
+	font-size: 1.1em;
+	text-align: justify;
+	line-height: 1.5em;
 	font-weight: 500;
 	color: #5A5A5A;
 	margin-bottom: 20px;
