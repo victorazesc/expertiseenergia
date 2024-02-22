@@ -174,11 +174,11 @@ export default async function handler(req: { method: string; body: { name: any; 
                                                                           <tr>
                                                                               <td bgcolor="transparent" align="center"
                                                                                   style="padding-top:9px; padding-bottom:9px; padding-left:18px; padding-right:18px">
-                                                                                  <!--  <img data-imagetype="External"
+                                                                                  <img data-imagetype="External"
                                                                                    src="https://expertiseenergia.com.br/images/email-footer.png"
                                                                                    alt="" width="564" border="0"
                                                                                    class="x_img-max"
-                                                                                   style="border:0; line-height:100%; outline:none; display:block; max-width:564px; height:auto">-->
+                                                                                   style="border:0; line-height:100%; outline:none; display:block; max-width:564px; height:auto">
                                                                               </td>
                                                                           </tr>
                                                                       </tbody>
