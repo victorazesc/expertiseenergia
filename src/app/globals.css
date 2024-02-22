@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 html {
 	background: white;
 }
@@ -510,11 +511,16 @@ button[type="submit"]:hover {
 
 .redesign__green-presentation-item {
 	width: 33%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 35px;
 }
 
 .redesign__green-presentation-item img {
 	object-fit: contain;
-	width: 100%;
+	width: 150px;
 }
 
 .redesign__green-presentation-item--number {
@@ -531,6 +537,7 @@ button[type="submit"]:hover {
 	font-style: normal;
 	font-size: 16px;
 	line-height: 19px;
+	font-weight: 500;
 	color: #5A5A5A;
 	margin-bottom: 20px;
 }
