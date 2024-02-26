@@ -3,7 +3,7 @@ export function Footer() {
     return (
         <>
             <footer className="redesign__footer flex flex-col sm:flex-row justify-between container mx-auto py-12 relative">
-                <a href="#desktopContent" className="absolute -top-14 right-0"> <img src="images/up.svg" alt="subir" /></a>
+                <a href="#desktopContent" className="absolute -top-14 sm:-top-11 right-0"> <img src="images/up.svg" alt="subir" /></a>
 
                 <div className="redesign__footer-social flex-col sm:flex-row">
                     <img src="images/Logo-Expertise-branca-R-2.png" alt="" width={230} />
@@ -59,7 +59,7 @@ export function Footer() {
             <div className="bg-slate-100 py-8">
                 <div className="container mx-auto px-4 flex flex-col gap-8 sm:flex-row justify-between">
                     <p>{year}. Expertise - Todos os direitos reservados </p>
-                    <p className="text-slate-400">Designed by Victor Azevedo</p>
+                    <p className="text-slate-400">Designed by <a href="https://www.azevedo.click/">Victor Azevedo</a></p>
                 </div>
 
             </div>

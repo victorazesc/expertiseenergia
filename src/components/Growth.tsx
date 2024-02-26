@@ -14,7 +14,7 @@ export function Growth() {
                 <Card title={"+ 5 mil"} description={"Placas Solares"} />
                 <Card title={"+ 500"} description={"Clientes Felizes"} />
               </div>
-              <div className="self-end absolute left-1/2 hidden lg:visible xl:visible sm:visible">
+              <div className="self-end absolute left-1/2 hidden sm:block">
                 <img src="images/solar-plates.svg" alt="" />
               </div>
             </div>
