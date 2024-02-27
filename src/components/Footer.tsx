@@ -21,22 +21,19 @@ export function Footer() {
                     <div className="redesign__footer-location-item flex-col gap-4">
                         <span>Institucional</span>
                         <div className="redesign__footer-location-item-details">
-                            Como Funciona
+                            <a href="#how-it-works"> Como Funciona</a>
                         </div>
                         <div className="redesign__footer-location-item-details">
-                            Vantagens
+                            <a href="#our-clients">Nossos Clientes</a>
                         </div>
                         <div className="redesign__footer-location-item-details">
-                            Nossos Clientes
+                            <a href="##our-work">Nosso Trabalho</a>
                         </div>
                         <div className="redesign__footer-location-item-details">
-                            Nosso Trabalho
+                            <a href="#simulate-form">Contato</a>
                         </div>
                         <div className="redesign__footer-location-item-details">
-                            Contato
-                        </div>
-                        <div className="redesign__footer-location-item-details">
-                            Fazer uma simulação
+                            <a href="#simulate-form">Fazer uma simulação</a>
                         </div>
                     </div>
                 </div>
