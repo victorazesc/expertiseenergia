@@ -29,7 +29,7 @@ export function Menu() {
 				</div>}
 				{!isMobile && <ul className='flex'>
 					<li><a href="#how-it-works">COMO FUNCIONA</a></li>
-					<li><a href="#advantages">VANTAGENS</a></li>
+					{/* <li><a href="#advantages">VANTAGENS</a></li> */}
 					<li><a href="#our-clients">NOSSOS CLIENTES</a></li>
 					<li><a href="#our-work">NOSSO TRABALHO</a></li>
 					<li><a href="#simulate-form">CONTATO</a></li>
@@ -39,7 +39,7 @@ export function Menu() {
 			{togleMenu && isMobile && <div className='px-8 py-8'>
 				<ul>
 					<li className='mt-3'><a href="#how-it-works">COMO FUNCIONA</a></li>
-					<li className='mt-3'><a href="#advantages">VANTAGENS</a></li>
+					{/* <li className='mt-3'><a href="#advantages">VANTAGENS</a></li> */}
 					<li className='mt-3'><a href="#our-clients">NOSSOS CLIENTES</a></li>
 					<li className='mt-3'><a href="#our-work">NOSSO TRABALHO</a></li>
 					<li className='mt-3'><a href="#simulate-form">CONTATO</a></li>

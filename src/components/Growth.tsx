@@ -11,7 +11,7 @@ export function Growth() {
               <div className="flex py-10 flex-col gap-8">
                 <Card title={"16 Parques Solares"} description={"Usinas Fotovoltaicas Instaladas em Solo na BR-174 e AM-010"} />
                 <Card title={"+ 30.000"} description={"Placas Solares instaladas em coberturas de residências e empresas em Manaus"} />
-                <Card title={"+ 2000"} description={"Clientes Felizes"} />
+                <Card title={"+ 2.000"} description={"Clientes Felizes"} />
               </div>
               <div className="self-end absolute left-1/2 hidden sm:block">
                 <img src="images/solar-plates.svg" alt="" className="w-[600px]" />
