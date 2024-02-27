@@ -43,16 +43,6 @@ const testimonials = [
 
 export function Testimonials({ showVideoModal, mobile }: any) {
 
-    const [index, setIndex] = useState(0)
-
-    function handleSlide(action: string) {
-        if (action === "previous") {
-            setIndex(index - 1)
-        } else {
-            setIndex(index + 1)
-        }
-    }
-
     return (
         <>
             <span id="our-clients"></span>
@@ -62,14 +52,14 @@ export function Testimonials({ showVideoModal, mobile }: any) {
                         <h1 className="text-4xl font-bold py-4 text-center">Veja o depoimento de quem ja investiu</h1>
                         <h4 className="text-2xl text-center">Como nossos clientes reduziram suas contas de 4 digitos para 3 digitos</h4>
                     </div>
-                    <div className="flex flex-wrap justify-between items-center">
-                        <div onClick={() => handleSlide("previous")} style={{ visibility: index !== 0 ? 'visible' : 'hidden' }} className="rounded-full w-12 h-12 bg-neutral-200 flex items-center justify-center">
-                            <img src="images/chevron-left.svg" alt="seta para esquerda" />
-                        </div>
-                        <Card index={index} />
-                        <div onClick={() => handleSlide("next")} style={{ visibility: index != testimonials.length - 1 ? 'visible' : 'hidden' }} className="rounded-full w-12 h-12 bg-neutral-200 flex items-center justify-center">
-                            <img src="images/chevron-right.svg" alt="seta para direita" />
-                        </div>
+                    <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 text-xl px-4 gap-4 py-12">
+
+                        {testimonials.map((item) => {
+                            return (
+                                <Card quote={item.quote} direction={item.direction} name={item.name} rangeValue={item.rangeValue} src={item.src} alt={item.alt} description={item.description} />
+                            )
+                        })}
+
                     </div>
                 </div>
             </section>
@@ -77,27 +67,32 @@ export function Testimonials({ showVideoModal, mobile }: any) {
     )
 
     interface ICard {
-        index: number
+        quote: string
+        direction?: string
+        name: string
+        rangeValue: number[]
+        src: string
+        alt: string
+        description: string
     }
-    function Card({ index }: ICard) {
-
-        const { quote, alt, direction, name, rangeValue, src } = testimonials[index]
+    function Card({ quote, alt, direction, name, rangeValue, src, description }: ICard) {
 
         return (
-
-            <div className="flex items-center flex-col w-3/4">
-                <img className="pt-8" src="images/quotes.svg" alt="Aspas" />
-                <h1 className="text-4xl max-w-2xl text-center py-16">{quote}</h1>
-
-                <div className="flex justify-between items-center bg-blue-500 py-4 px-4 sm:px-12 rounded-2xl gap-4 sm:gap-8" onClick={() => { showVideoModal(alt, direction) }}>
-                    <div>
-                        <div className="w-24 h-24 bg-cover rounded-full" style={{ backgroundImage: `url(${src})` }}></div>
+            <div className="flex shadow-lg rounded-md px-4 py-4" onClick={() => { showVideoModal(alt, direction) }}>
+                <div className="min-w-60 h-72 bg-cover rounded-md mr-4" style={{ backgroundImage: `url(${src})` }}></div>
+                <div>
+                    <div className="">
+                        <p className="font-medium text-xl">{quote}</p>
+                        <p className="font-bold py-4">{name}</p>
+                        <p className="font-medium text-sm" dangerouslySetInnerHTML={{ __html: description }} />
+                        {rangeValue.length > 1 &&
+                            <p className="font-bold text-[#35B6AA] py-4 text-base">
+                                As contas foram de
+                                <br />
+                                <b>R${rangeValue[0]}</b> para <b>R${rangeValue[1]}</b>
+                            </p>
+                        }
                     </div>
-                    <div className="w-2/3">
-                        <p className="font-bold text-white">{name}</p>
-                        <p className="font-medium text-white">As contas foram de R${rangeValue[0]} para menos de R${rangeValue[1]}</p>
-                    </div>
-                    <img src="images/youtube.svg" width={40} alt="youtube" />
                 </div>
             </div>
         )

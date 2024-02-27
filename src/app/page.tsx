@@ -82,7 +82,7 @@ function Home() {
         <Menu />
         <Hero />
         <HowItWorks />
-        <Advantages />
+        {/* <Advantages /> */}
         <Growth />
         {/* <SocialImpact /> */}
         {/* <WhoMaters /> */}

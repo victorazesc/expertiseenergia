@@ -10,15 +10,17 @@ export function Purpose({ }) {
           tecnologia</b>. <br /> Desde 2017 estamos <b>revolucionando o cenário atual do consumo de
             energia</b>,
           possibilitando o consumo de energia limpa com praticidade e segurança.</p>
-        <div className="flex gap-4 py-4">
-          <div className="rounded-2xl bg-cover bg-center w-36 h-36 lg:w-72 xl:w-72 lg:h-72" style={{ backgroundImage: "url(images/Foto-5.png)" }}></div>
-          <div className="rounded-2xl bg-cover bg-center w-52 h-36 lg:w-[500px] xl:w-[500px] lg:h-72" style={{ backgroundImage: "url(images/foto-6.jpeg)" }}></div>
-          <div className="rounded-2xl bg-cover bg-center w-36 h-36 lg:w-72 xl:w-72 lg:h-72" style={{ backgroundImage: "url(images/Foto-3.png)" }}></div>
-        </div>
-        <div className="flex gap-4">
-          <div className="rounded-2xl bg-cover bg-center w-52 h-36 lg:w-[500px] xl:w-[500px] lg:h-72" style={{ backgroundImage: "url(images/Foto-7.jpeg)" }}></div>
-          <div className="rounded-2xl bg-cover bg-center w-36 h-36 lg:w-72 xl:w-72 lg:h-72" style={{ backgroundImage: "url(images/Foto-4.png)" }}></div>
-          <div className="rounded-2xl bg-cover bg-center w-36 h-36 lg:w-72 xl:w-72 lg:h-72" style={{ backgroundImage: "url(images/Foto-1.png)" }}></div>
+        <div className="container mx-auto grid grid-cols-5 sm:grid-cols-5 text-xl px-4 gap-4">
+          <div className="rounded-2xl bg-cover bg-center w-24 h-24 lg:w-72 xl:w-72 lg:h-72" style={{ backgroundImage: "url(images/Foto-1.jpeg)" }}></div>
+          <div className="rounded-2xl bg-cover bg-center w-24 h-24 lg:w-72 xl:w-72 lg:h-72" style={{ backgroundImage: "url(images/foto-2.jpeg)" }}></div>
+          <div className="rounded-2xl bg-cover bg-center w-24 h-24 lg:w-72 xl:w-72 lg:h-72" style={{ backgroundImage: "url(images/Foto-3.jpeg)" }}></div>
+          <div className="rounded-2xl bg-cover bg-center w-24 h-24 lg:w-72 xl:w-72 lg:h-72" style={{ backgroundImage: "url(images/Foto-4.jpeg)" }}></div>
+          <div className="rounded-2xl bg-cover bg-center w-24 h-24 lg:w-72 xl:w-72 lg:h-72" style={{ backgroundImage: "url(images/Foto-5.jpeg)" }}></div>
+          <div className="rounded-2xl bg-cover bg-center w-24 h-24 lg:w-72 xl:w-72 lg:h-72" style={{ backgroundImage: "url(images/Foto-6.jpeg)" }}></div>
+          <div className="rounded-2xl bg-cover bg-center w-24 h-24 lg:w-72 xl:w-72 lg:h-72" style={{ backgroundImage: "url(images/Foto-7.jpeg)" }}></div>
+          <div className="rounded-2xl bg-cover bg-center w-24 h-24 lg:w-72 xl:w-72 lg:h-72" style={{ backgroundImage: "url(images/Foto-8.jpeg)" }}></div>
+          <div className="rounded-2xl bg-cover bg-center w-24 h-24 lg:w-72 xl:w-72 lg:h-72" style={{ backgroundImage: "url(images/Foto-9.jpeg)" }}></div>
+          <div className="rounded-2xl bg-cover bg-center w-24 h-24 lg:w-72 xl:w-72 lg:h-72" style={{ backgroundImage: "url(images/Foto-10.jpeg)" }}></div>
         </div>
       </section >
     </>

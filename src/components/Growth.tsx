@@ -9,13 +9,12 @@ export function Growth() {
             <h4 className="text-2xl">Conheça um pouco dos nossos números</h4>
             <div className="flex">
               <div className="flex py-10 flex-col gap-8">
-                <Card title={"3"} description={"Parques conclúidos na região norte"} />
-                <Card title={"1"} description={"Parque em operação na região sul"} />
-                <Card title={"+ 5 mil"} description={"Placas Solares"} />
-                <Card title={"+ 500"} description={"Clientes Felizes"} />
+                <Card title={"16 Parques Solares"} description={"Usinas Fotovoltaicas Instaladas em Solo na BR-174 e AM-010"} />
+                <Card title={"+ 30.000"} description={"Placas Solares instaladas em coberturas de residências e empresas em Manaus"} />
+                <Card title={"+ 2000"} description={"Clientes Felizes"} />
               </div>
               <div className="self-end absolute left-1/2 hidden sm:block">
-                <img src="images/solar-plates.svg" alt="" />
+                <img src="images/solar-plates.svg" alt="" className="w-[600px]" />
               </div>
             </div>
           </div>

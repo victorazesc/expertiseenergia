@@ -1,7 +1,7 @@
 export function HowItWorks() {
     return (
         <>
-            <div className="flex flex-col">
+            <div className="flex flex-col py-20">
                 <span id="how-it-works"></span>
                 <section className="container mx-auto py-20 text-center">
                     <h5 className="text-2xl">Porque Energia Solar?</h5>
