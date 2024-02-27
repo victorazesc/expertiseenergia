@@ -16,7 +16,7 @@ export function Purpose({ }) {
           <div className="rounded-2xl bg-cover bg-center w-24 h-24 lg:w-72 xl:w-72 lg:h-72" style={{ backgroundImage: "url(images/Foto-3.jpeg)" }}></div>
           <div className="rounded-2xl bg-cover bg-center w-24 h-24 lg:w-72 xl:w-72 lg:h-72" style={{ backgroundImage: "url(images/Foto-4.jpeg)" }}></div>
           <div className="rounded-2xl bg-cover bg-center w-24 h-24 lg:w-72 xl:w-72 lg:h-72" style={{ backgroundImage: "url(images/Foto-5.jpeg)" }}></div>
-          <div className="rounded-2xl bg-cover bg-center w-24 h-24 lg:w-72 xl:w-72 lg:h-72" style={{ backgroundImage: "url(images/Foto-6.jpeg)" }}></div>
+          <div className="rounded-2xl bg-cover bg-center w-24 h-24 lg:w-72 xl:w-72 lg:h-72" style={{ backgroundImage: "url(images/Foto-6-.jpeg)" }}></div>
           <div className="rounded-2xl bg-cover bg-center w-24 h-24 lg:w-72 xl:w-72 lg:h-72" style={{ backgroundImage: "url(images/Foto-7.jpeg)" }}></div>
           <div className="rounded-2xl bg-cover bg-center w-24 h-24 lg:w-72 xl:w-72 lg:h-72" style={{ backgroundImage: "url(images/Foto-8.jpeg)" }}></div>
           <div className="rounded-2xl bg-cover bg-center w-24 h-24 lg:w-72 xl:w-72 lg:h-72" style={{ backgroundImage: "url(images/Foto-9.jpeg)" }}></div>
