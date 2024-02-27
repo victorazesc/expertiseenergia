@@ -20,21 +20,34 @@ export function Footer() {
                 <div className="flex flex-col sm:flex-row py-12 sm:py-0">
                     <div className="redesign__footer-location-item flex-col gap-4">
                         <span>Institucional</span>
-                        <div className="redesign__footer-location-item-details">
-                            <a href="#how-it-works"> Como Funciona</a>
-                        </div>
-                        <div className="redesign__footer-location-item-details">
-                            <a href="#our-clients">Nossos Clientes</a>
-                        </div>
-                        <div className="redesign__footer-location-item-details">
-                            <a href="##our-work">Nosso Trabalho</a>
-                        </div>
-                        <div className="redesign__footer-location-item-details">
-                            <a href="#simulate-form">Contato</a>
-                        </div>
-                        <div className="redesign__footer-location-item-details">
-                            <a href="#simulate-form">Fazer uma simulação</a>
-                        </div>
+
+                        <a href="#how-it-works" className="cursor-pointer block" style={{ padding: 0 }}>
+                            <div className="redesign__footer-location-item-details">
+                                Como Funciona
+                            </div>
+                        </a>
+
+                        <a href="#our-clients" className="cursor-pointer block" style={{ padding: 0 }}>
+                            <div className="redesign__footer-location-item-details">
+                                Nossos Clientes
+                            </div>
+                        </a>
+
+                        <a href="##our-work" className="cursor-pointer block" style={{ padding: 0 }}>
+                            <div className="redesign__footer-location-item-details">
+                                Nosso Trabalho
+                            </div>
+                        </a>
+                        <a href="#simulate-form" className="cursor-pointer block" style={{ padding: 0 }}>
+                            <div className="redesign__footer-location-item-details">
+                                Contato
+                            </div>
+                        </a>
+                        <a href="#simulate-form" className="cursor-pointer block" style={{ padding: 0 }}>
+                            <div className="redesign__footer-location-item-details">
+                                Fazer uma simulação
+                            </div>
+                        </a>
                     </div>
                 </div>
                 <div className="redesign__footer-location  flex-col sm:flex-row">
