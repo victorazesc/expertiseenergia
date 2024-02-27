@@ -12,7 +12,7 @@ export function Purpose({ }) {
           possibilitando o consumo de energia limpa com praticidade e segurança.</p>
         <div className="container mx-auto grid grid-cols-5 sm:grid-cols-5 text-xl px-4 gap-4">
           <div className="rounded-2xl bg-cover bg-center w-24 h-24 lg:w-72 xl:w-72 lg:h-72" style={{ backgroundImage: "url(images/Foto-1.jpeg)" }}></div>
-          <div className="rounded-2xl bg-cover bg-center w-24 h-24 lg:w-72 xl:w-72 lg:h-72" style={{ backgroundImage: "url(images/foto-2.jpeg)" }}></div>
+          <div className="rounded-2xl bg-cover bg-center w-24 h-24 lg:w-72 xl:w-72 lg:h-72" style={{ backgroundImage: "url(images/Foto-2.jpeg)" }}></div>
           <div className="rounded-2xl bg-cover bg-center w-24 h-24 lg:w-72 xl:w-72 lg:h-72" style={{ backgroundImage: "url(images/Foto-3.jpeg)" }}></div>
           <div className="rounded-2xl bg-cover bg-center w-24 h-24 lg:w-72 xl:w-72 lg:h-72" style={{ backgroundImage: "url(images/Foto-4.jpeg)" }}></div>
           <div className="rounded-2xl bg-cover bg-center w-24 h-24 lg:w-72 xl:w-72 lg:h-72" style={{ backgroundImage: "url(images/Foto-5.jpeg)" }}></div>

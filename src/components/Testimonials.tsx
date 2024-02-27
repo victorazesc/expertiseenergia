@@ -56,7 +56,7 @@ export function Testimonials({ showVideoModal, mobile }: any) {
 
                         {testimonials.map((item) => {
                             return (
-                                <Card quote={item.quote} direction={item.direction} name={item.name} rangeValue={item.rangeValue} src={item.src} alt={item.alt} description={item.description} />
+                                <Card key={Math.random()} quote={item.quote} direction={item.direction} name={item.name} rangeValue={item.rangeValue} src={item.src} alt={item.alt} description={item.description} />
                             )
                         })}
 
