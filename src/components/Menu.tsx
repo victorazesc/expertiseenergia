@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-
+import Image from "next/image"
 export function Menu() {
 
 	const [isMobile, setIsMobile] = useState(false);
@@ -23,13 +23,12 @@ export function Menu() {
 	return (
 		<header className="redesign-menu flex flex-col sm:flex-row">
 			<div className="container mx-auto px-4 flex justify-between">
-				<img src="images/Logo-Expertise-branca-R-1.png" />
+				<Image src="/images/Logo-Expertise-branca-R-1.png" width={162} height={36} alt='expertise branca' />
 				{isMobile && <div onClick={handleMenu}>
-					<img src="images/sandwich.svg" />
+					<Image src="/images/sandwich.svg" width={41} height={31} alt='menu' />
 				</div>}
 				{!isMobile && <ul className='flex'>
 					<li><a href="#how-it-works">COMO FUNCIONA</a></li>
-					{/* <li><a href="#advantages">VANTAGENS</a></li> */}
 					<li><a href="#our-clients">NOSSOS CLIENTES</a></li>
 					<li><a href="#our-work">NOSSO TRABALHO</a></li>
 					<li><a href="#simulate-form">CONTATO</a></li>
@@ -39,7 +38,6 @@ export function Menu() {
 			{togleMenu && isMobile && <div className='px-8 py-8'>
 				<ul>
 					<li className='mt-3'><a href="#how-it-works">COMO FUNCIONA</a></li>
-					{/* <li className='mt-3'><a href="#advantages">VANTAGENS</a></li> */}
 					<li className='mt-3'><a href="#our-clients">NOSSOS CLIENTES</a></li>
 					<li className='mt-3'><a href="#our-work">NOSSO TRABALHO</a></li>
 					<li className='mt-3'><a href="#simulate-form">CONTATO</a></li>

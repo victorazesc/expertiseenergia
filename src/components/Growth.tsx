@@ -1,3 +1,5 @@
+import Image from "next/image"
+
 export function Growth() {
   return (
     <>
@@ -14,7 +16,7 @@ export function Growth() {
                 <Card title={"+ 2.000"} description={"Clientes Felizes"} />
               </div>
               <div className="self-end absolute left-1/2 hidden sm:block">
-                <img src="images/solar-plates.svg" alt="" className="w-[600px]" />
+                <Image src="images/solar-plates.svg" alt="placa solar" width={600} height={258} className="w-[600px]" />
               </div>
             </div>
           </div>

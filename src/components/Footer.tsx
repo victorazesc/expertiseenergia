@@ -1,19 +1,21 @@
+import Image from "next/image"
+
 export function Footer() {
     const year = new Date().getFullYear()
     return (
         <>
             <footer className="redesign__footer flex flex-col sm:flex-row justify-between container mx-auto py-12 relative">
-                <a href="#desktopContent" className="absolute -top-14 sm:-top-11 right-0"> <img src="images/up.svg" alt="subir" /></a>
+                <a href="#desktopContent" className="absolute -top-14 sm:-top-11 right-0"> <Image src="/images/up.svg" width={104} height={56} alt="subir" /></a>
 
                 <div className="redesign__footer-social flex-col sm:flex-row">
-                    <img src="images/Logo-Expertise-branca-R-2.png" alt="" width={230} />
+                    <Image src="/images/Logo-Expertise-branca-R-2.png" width={230} height={51} alt="expertise" />
                     <div className="flex">
-                        <a href="https://www.instagram.com/expertisesolar" target="_blank"><img
-                            src="images/instagram.png" width={32} height={32} /></a>
-                        <a href="https://www.facebook.com/expertisesolar" target="_blank"><img
-                            src="images/Frame-150-1.png" width={32} height={32} /></a>
-                        <a href="https://www.youtube.com/@expertiseenergia" target="_blank"><img
-                            src="images/youtube.png" width={32} height={32} /></a>
+                        <a href="https://www.instagram.com/expertisesolar" target="_blank">
+                            <Image src="/images/instagram.png" width={32} height={32} alt={"instagram"} /></a>
+                        <a href="https://www.facebook.com/expertisesolar" target="_blank">
+                            <Image src="/images/Frame-150-1.png" width={32} height={32} alt="facebook" /></a>
+                        <a href="https://www.youtube.com/@expertiseenergia" target="_blank">
+                            <Image src="/images/youtube.png" width={32} height={32} alt="youtube" /></a>
                     </div>
 
                 </div>
@@ -54,11 +56,11 @@ export function Footer() {
                     <div className="redesign__footer-location-item flex-col gap-4">
                         <span>Manaus</span>
                         <div className="redesign__footer-location-item-details">
-                            <img src="images/Frame-116.png" alt="" />
+                            <Image src="/images/Frame-116.png" width={17} height={17} alt="whatsapp" />
                             (92) 98600-3968
                         </div>
                         <div className="redesign__footer-location-item-details">
-                            <img src="images/Frame-115.png" alt="" />
+                            <Image src="/images/Frame-115.png" width={16} height={51} alt="endereço" />
                             Rua Rio Iça, 310, sala 3, Edifício Celebration Smart Offices - Nossa Senhora das Graças
                         </div>
                     </div>
