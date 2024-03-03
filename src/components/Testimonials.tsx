@@ -1,10 +1,9 @@
-import { useState } from "react";
-
+import Image from "next/image"
 
 const testimonials = [
     {
         key: 1,
-        src: "images/gisele-oshiro-1-1.jpg",
+        src: "/images/gisele-oshiro-1-1.jpg",
         direction: 'shorts',
         alt: "https://www.youtube.com/embed/Q98hd6snnUo",
         quote: "Eu estou super feliz. Essa é a conta dos meus sonhos!",
@@ -14,7 +13,7 @@ const testimonials = [
     },
     {
         key: 2,
-        src: "images/jose-chaar-1-1.jpg",
+        src: "/images/jose-chaar-1-1.jpg",
         alt: "https://www.youtube.com/embed/t_crBvUaxaE",
         quote: "É o melhor investimento a se fazer, afinal, vamos sempre ter que pagar energia",
         name: "Dr. José Merched Chaar",
@@ -23,7 +22,7 @@ const testimonials = [
     },
     {
         key: 3,
-        src: "images/carlos-oshiro-1-1.jpg",
+        src: "/images/carlos-oshiro-1-1.jpg",
         alt: "https://www.youtube.com/embed/n1fTA2rIg6c",
         quote: "Tendo sobra de energia nas minhas placas, consigo transferir para onde quiser",
         name: "Carlos Oshiro",
@@ -32,7 +31,7 @@ const testimonials = [
     },
     {
         key: 4,
-        src: "images/claudio-guenka-1-1.jpg",
+        src: "/images/claudio-guenka-1-1.jpg",
         alt: "https://www.youtube.com/embed/DsUttf79bcA",
         quote: "Vivemos em um momento em que precisamos cada vez mais cooperar com o meio ambiente",
         name: "Cláudio Guenka",
@@ -79,7 +78,9 @@ export function Testimonials({ showVideoModal, mobile }: any) {
 
         return (
             <div className="flex shadow-lg rounded-md px-4 py-4" onClick={() => { showVideoModal(alt, direction) }}>
-                <div className="min-w-60 h-72 bg-cover rounded-md mr-4" style={{ backgroundImage: `url(${src})` }}></div>
+                <div className="min-w-60 h-72 bg-cover relative overflow-hidden rounded-md mr-4">
+                    <Image alt={alt} src={src} fill className="object-cover absolute" ></Image>
+                </div>
                 <div>
                     <div className="">
                         <p className="font-medium text-xl">{quote}</p>

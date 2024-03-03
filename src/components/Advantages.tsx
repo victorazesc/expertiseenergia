@@ -1,3 +1,4 @@
+import Image from "next/image"
 export function Advantages() {
     const advantages = [
         {
@@ -30,19 +31,19 @@ export function Advantages() {
 
                 <div className="flex justify-between flex-col-reverse sm:flex-row py-28">
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-12 px-24">
-                        <Card title={"Investimento seguro"} description={"O retorno é certo: você investe o custo de energia dos próximos 5 anos e economiza por 25"} icon={"images/piggy-bank.svg"} />
-                        <Card title={"Valorização das cotas"} description={"Seu investimento é impulsionado pelos reajustes anuais da tarifa de energia elétrica"} icon={"images/profits-analytics.svg"} />
-                        <Card title={"Foco no que importa"} description={"Economizando na conta de luz você fica tranquilo para curtir o que realmente importa sem limitações"} icon={"images/family.svg"} />
-                        <Card title={"Suporte técnico e garantia"} description={" Nossos especialistas estarão sempre à disposição para tirar dúvidas"} icon={"images/hand-shake.svg"} />
+                        <Card title={"Investimento seguro"} description={"O retorno é certo: você investe o custo de energia dos próximos 5 anos e economiza por 25"} icon={"/images/piggy-bank.svg"} />
+                        <Card title={"Valorização das cotas"} description={"Seu investimento é impulsionado pelos reajustes anuais da tarifa de energia elétrica"} icon={"/images/profits-analytics.svg"} />
+                        <Card title={"Foco no que importa"} description={"Economizando na conta de luz você fica tranquilo para curtir o que realmente importa sem limitações"} icon={"/images/family.svg"} />
+                        <Card title={"Suporte técnico e garantia"} description={" Nossos especialistas estarão sempre à disposição para tirar dúvidas"} icon={"/images/hand-shake.svg"} />
                     </div>
                     <div>
-                        <img src="images/coins.svg" alt="" width={1500} />
+                        <Image src="images/coins.svg" alt="moedas" width={1500} />
                     </div>
                 </div>
                 <h1 className="text-4xl font-bold py-4 text-center">Você investe no futuro do planeta</h1>
                 <div className="flex justify-between flex-col sm:flex-row py-28">
                     <div>
-                        <img src="images/nature.svg" alt="" width={2500} />
+                        <Image src="images/nature.svg" alt="natureza" width={2500} />
                     </div>
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 px-24">
                         <Card title={"Segurança e monitoramento"} description={"Somos responsáveis por toda a operação, manutenção e garantia de eficiência das placas do parque"} icon={"images/check.svg"} />
@@ -63,7 +64,7 @@ export function Advantages() {
     function Card({ title, description, icon }: ICard) {
         return (
             <div>
-                <img src={icon} width={35} alt="Cofrinho" />
+                <Image src={icon} width={35} height={35} alt="Cofrinho" />
                 <h5 className="font-Oswald font-bold text-lg">{title}</h5>
                 <p className="text-lg">
                     {description}

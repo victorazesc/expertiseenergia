@@ -2,6 +2,7 @@ import { Formik, Form, Field } from 'formik';
 import * as Yup from 'yup';
 import InputMask from 'react-input-mask';
 import { useState } from 'react';
+import Image from "next/image"
 
 export function Agendor({ mobile }: any) {
     const [sendedEmail, setSendedEmail] = useState<boolean>(false);
@@ -56,7 +57,7 @@ export function Agendor({ mobile }: any) {
                         <div className='bg-white rounded-3xl px-8 py-8'>
                             {sendedEmail ?
                                 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-                                    <img src="images/rounded-check.svg" alt="" width={130} />
+                                    <Image src="images/rounded-check.svg" alt="check" width={130} />
                                     <h1 className='text-2xl font-medium py-4'>
                                         Sua solicitação de contato foi concluída!
                                     </h1>
@@ -103,7 +104,7 @@ export function Agendor({ mobile }: any) {
                                                 <br />
                                                 {
                                                     loadingButton ? <button disabled={true} className="agendor-button" id="submit-agendor-form" type="submit"
-                                                    ><img src="images/loading.svg" width={35} alt="" /></button> : <button className="agendor-button mt-5" id="submit-agendor-form" type="submit"
+                                                    ><Image src="images/loading.svg" width={35} alt="loading" /></button> : <button className="agendor-button mt-5" id="submit-agendor-form" type="submit"
                                                     >enviar</button>
                                                 }
 
@@ -196,7 +197,7 @@ export function Agendor({ mobile }: any) {
                         <div style={{ background: "white", flex: "5 0 0", padding: "32px" }}>
                             {sendedEmail ?
                                 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-                                    <img src="images/check-mark.png" alt="" width={130} />
+                                    <Image src="images/check-mark.png" alt="" width={130} />
                                     <h1 className='text-2xl'>
                                         Sua solicitação de contato foi enviada!
                                     </h1>
@@ -242,7 +243,7 @@ export function Agendor({ mobile }: any) {
                                             <br />
                                             {
                                                 loadingButton ? <button disabled={true} className="agendor-button" id="submit-agendor-form" type="submit"
-                                                ><img src="images/loading.svg" width={35} alt="" /></button> : <button className="agendor-button mt-5" id="submit-agendor-form" type="submit"
+                                                ><Image src="images/loading.svg" width={35} alt="" /></button> : <button className="agendor-button mt-5" id="submit-agendor-form" type="submit"
                                                 >enviar</button>
                                             }
 

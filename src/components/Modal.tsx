@@ -1,3 +1,4 @@
+import Image from "next/image"
 export function Modal({ activeTestimonial, setShowModal, mobile }: any) {
 
     return (
@@ -8,7 +9,7 @@ export function Modal({ activeTestimonial, setShowModal, mobile }: any) {
                     <div className="redesign__testimonial-video--content">
                         <span className="redesign__testimonial-video--button" onClick={() => setShowModal(false)}>
                             Fechar
-                            <img src="images/times.png" alt="" />
+                            <Image src="images/times.png" alt="sair" />
                         </span>
                         {activeTestimonial.direction === 'shorts' ?
 
@@ -35,7 +36,7 @@ export function Modal({ activeTestimonial, setShowModal, mobile }: any) {
                     <div className="redesign__testimonial-video--content">
                         <span className="redesign__testimonial-video--button" onClick={() => setShowModal(false)}>
                             Fechar
-                            <img src="images/times.png" alt="" />
+                            <Image src="images/times.png" alt="sair" />
                         </span>
                         {activeTestimonial.direction === 'shorts' ?
                             <iframe id="testimonial-player-shorts-mobile"
