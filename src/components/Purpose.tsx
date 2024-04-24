@@ -57,7 +57,7 @@ export function Purpose({ }) {
         <div className="container mx-auto grid grid-cols-5 sm:grid-cols-5 text-xl px-4 gap-4">
           {images.map((item) => {
             return (
-              <div className="rounded-2xl bg-cover bg-center overflow-hidden relative w-24 h-24 lg:w-72 xl:w-72 lg:h-72">
+              <div key={item.alt} className="rounded-2xl bg-cover bg-center overflow-hidden relative w-24 h-24 lg:w-72 xl:w-72 lg:h-72">
                 <Image src={item.src} alt={item.alt} fill={true} className="object-cover"></Image>
               </div>
             )
