@@ -161,7 +161,7 @@ export default async function handler(req: { method: string; body: { name: any; 
                                 </span><br><br>
   <span style="font-family:sans-serif">
                                 
-                                                                                       <strong>(92)98600-3968</strong></span>
+                                                                                       <strong>(92) 98451-2299</strong></span>
   </p>
                                                                               </td>
                                                                           </tr>

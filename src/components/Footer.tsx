@@ -55,9 +55,9 @@ export function Footer() {
                 <div className="redesign__footer-location  flex-col sm:flex-row">
                     <div className="redesign__footer-location-item flex-col gap-4">
                         <span>Manaus</span>
-                        <div className="redesign__footer-location-item-details">
-                            <Image src="/images/Frame-116.png" width={17} height={17} alt="whatsapp" />
-                            (92) 98600-3968
+                        <div className="flex items-center">
+                            <Image src="/images/Frame-116.png" className="h-4" width={16} height={17} alt="whatsapp" />
+                            <a href="https://wa.me/5592984512299">(92) 98451-2299</a>
                         </div>
                         <div className="redesign__footer-location-item-details">
                             <Image src="/images/Frame-115.png" width={16} height={51} alt="endereço" />
