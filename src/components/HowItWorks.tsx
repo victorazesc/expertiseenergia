@@ -5,7 +5,7 @@ export function HowItWorks() {
             <div className="flex flex-col py-20">
                 <span id="how-it-works"></span>
                 <section className="container mx-auto py-20 text-center">
-                    <h5 className="text-2xl">Porque Energia Solar?</h5>
+                    <h5 className="text-2xl">Por que Energia Solar?</h5>
                     <h4 className="text-3xl font-bold py-4">Investimento inteligente que ajuda o planeta</h4>
                 </section>
                 <section className="container mx-auto grid grid-cols-1 sm:grid-cols-3 text-xl px-4 gap-4">
