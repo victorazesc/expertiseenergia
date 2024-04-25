@@ -12,8 +12,15 @@ import { Hero } from '@/components/Hero';
 import { HowItWorks } from '@/components/HowItWorks';
 
 import { Footer } from '@/components/Footer';
+import TagManager from 'react-gtm-module';
+import { useRouter } from 'next/navigation';
 
 function Home() {
+  const router = useRouter();
+
+  useEffect(() => {
+    TagManager.initialize({ gtmId: 'GTM-W2K4DXBH' });
+}, []);
 
   const [showModal, setShowModal] = useState(false);
   const [activeTestimonial, setActiveTestimonial] = useState<any>(null);
