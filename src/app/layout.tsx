@@ -35,6 +35,11 @@ export default function RootLayout({
                   })(window,document,'script','dataLayer',"${GOOGLE_GTM_ID}")`,
           }}
         />
+        <script
+          type="text/javascript"
+          async
+          src="https://d335luupugsy2.cloudfront.net/js/loader-scripts/ca5ed3b1-b319-4b84-b8f1-602cc1126b7a-loader.js"
+        />
 
       </Head>
       <body>
