@@ -257,3 +257,9 @@ button[type="submit"]:hover {
 		font-size: 12px;
 	}
 }
+
+.hero{
+	background: linear-gradient(90deg, #A4F4B6 0%, #89EEC4 100%);
+	border-radius: 40px;
+	padding:64px 64px;
+}
