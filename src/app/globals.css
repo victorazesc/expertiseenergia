@@ -72,14 +72,14 @@ button[type="submit"]:hover {
 	justify-content: space-between;
 	box-sizing: border-box;
 	padding: 8px 0px;
-	background: rgba(0, 44, 116, 0.25);
+	background: #FFFFFF;
 	transition: ease-in-out .3s;
 	z-index: 999;
 	backdrop-filter: blur(10px);
 }
 
 .redesign-menu:hover {
-	background: rgba(0, 44, 116, 0.5);
+	background: white;
 }
 
 .redesign-menu img {
@@ -89,8 +89,8 @@ button[type="submit"]:hover {
 
 .redesign-menu ul li a {
 	box-sizing: border-box;
-	padding: 8px 12px;
-	color: white;
+	padding: 4px 22px;
+	color: black;
 	font-style: normal;
 	font-weight: 500;
 	border-radius: 0.75rem;
@@ -111,11 +111,12 @@ button[type="submit"]:hover {
 
 .redesign-menu ul li .redesign-menu__green-link {
 	background: #35B6AA;
-	border-radius: 0.75rem;
+	border-radius: 100rem;
+	color: white;
 }
 
 .redesign-menu ul li .redesign-menu__green-link:hover {
-	background: #35b6a983;
+	background: #35B6AA;
 	color: white;
 }
 
