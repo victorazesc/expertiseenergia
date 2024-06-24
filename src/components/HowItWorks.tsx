@@ -3,7 +3,7 @@ import Image from "next/image";
 export function HowItWorks() {
   return (
     <>
-      <div className="flex flex-col py-4">
+      <div className="flex flex-col py-4 gap-12">
         <span id="how-it-works"></span>
         <section className="justify-between flex items-center container mx-auto py-20 text-center">
           <div>
@@ -73,11 +73,62 @@ export function HowItWorks() {
                 Indicado para imóveis sem área de telhado disponível, como
                 apartamentos.
               </p>
-              <p>A energia é produzida nas suas placas, instaladas
-                em um de nossos parques solares. Após a geração, é injetada na
-                rede da distribuidora de energia, assim, convertida em créditos
-                que são abatidos do consumo dos usuários do parque solar.</p>
-                <p className="py-4">Somos responsáveis por toda a operação, manutenção e garantia de eficiência das placas do parque.</p>
+              <p>
+                A energia é produzida nas suas placas, instaladas em um de
+                nossos parques solares. Após a geração, é injetada na rede da
+                distribuidora de energia, assim, convertida em créditos que são
+                abatidos do consumo dos usuários do parque solar.
+              </p>
+              <p className="py-4">
+                Somos responsáveis por toda a operação, manutenção e garantia de
+                eficiência das placas do parque.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section className="container mx-auto grid grid-cols-1 px-4 gap-16">
+          <div className="flex flex-col gap-y-12">
+            <div className="flex flex-row w-full bg-[#F5F5F5] rounded-3xl pt-4 gap-x-12">
+              <Image
+                src={"/images/grupo.png"}
+                alt={"Hibrid"}
+                width={209}
+                height={150}
+              />
+              <div className="flex flex-col gap-2">
+                <h3 className="text-3xl text font-bold">Sistemas Híbridos</h3>
+                <h5 className="text-xl text font-bold">
+                  Sua casa livre de quedas de luz e sem dependência da
+                  concessionária
+                </h5>
+                <p className="font-medium">
+                  Unindo a tecnologia das placas fotovoltaicas a baterias de
+                  lítio, a Expertise oferece sistemas híbridos residenciais que
+                  não te deixam na mão. A energia produzida pelas placas é
+                  armazenada direto nas baterias de lítio e distribuída para a
+                  sua residência diretamente.
+                </p>
+              </div>
+            </div>
+            <div className="flex flex-row w-full bg-[#F5F5F5] rounded-3xl pt-4 gap-x-12">
+              <Image
+                src={"/images/navio.png"}
+                alt={"Hibrid"}
+                width={209}
+                height={150}
+              />
+              <div className="flex flex-col gap-2">
+                <h3 className="text-3xl text font-bold">Sistemas Náuticos</h3>
+                <h5 className="text-xl text font-bold">
+                  Energia ininterrupta para marinas e grandes embarcações com
+                  tecnologia apropriada
+                </h5>
+                <p className="font-medium">
+                  A energia é produzida pelas placas fotovoltaicas e armazenada
+                  em baterias de lítio, que conectadas ao sistema da Expertise
+                  abastecem a embarcação ou marina sem interrupções.
+                </p>
+              </div>
             </div>
           </div>
         </section>
