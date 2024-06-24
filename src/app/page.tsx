@@ -38,14 +38,14 @@ function Home() {
         <Menu />
         <Hero />
         <HowItWorks />
+        <Agendor mobile={isMobile} />
+        <Testimonials showVideoModal={showVideoModal} />
         <Growth />
         {showModal &&
           <Modal activeTestimonial={activeTestimonial} setShowModal={setShowModal}></Modal>
         }
-        <Testimonials showVideoModal={showVideoModal} />
 
         <Purpose />
-        <Agendor mobile={isMobile} />
         <Footer />
       </div>
 
