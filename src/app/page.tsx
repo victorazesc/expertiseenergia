@@ -12,8 +12,16 @@ import { Hero } from '@/components/Hero';
 import { HowItWorks } from '@/components/HowItWorks';
 
 import { Footer } from '@/components/Footer';
+import TagManager from 'react-gtm-module';
+import { useRouter } from 'next/navigation';
+import { Advantages } from '@/components/Advantages';
 
 function Home() {
+  const router = useRouter();
+
+  useEffect(() => {
+    TagManager.initialize({ gtmId: 'GTM-W2K4DXBH' });
+}, []);
 
   const [showModal, setShowModal] = useState(false);
   const [activeTestimonial, setActiveTestimonial] = useState<any>(null);
@@ -31,14 +39,15 @@ function Home() {
         <Menu />
         <Hero />
         <HowItWorks />
+        <Agendor mobile={isMobile} />
+        <Testimonials showVideoModal={showVideoModal} />
         <Growth />
+        <Advantages/>
         {showModal &&
           <Modal activeTestimonial={activeTestimonial} setShowModal={setShowModal}></Modal>
         }
-        <Testimonials showVideoModal={showVideoModal} />
 
         <Purpose />
-        <Agendor mobile={isMobile} />
         <Footer />
       </div>
 

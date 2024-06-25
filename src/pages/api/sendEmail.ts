@@ -1,10 +1,10 @@
 import transporter from "@/configs/nodemailer.config";
 
 
-export default async function handler(req: { method: string; body: { name: any; email: any; phone: any; }; }, res: { status: (arg0: number) => { (): any; new(): any; json: { (arg0: { message: string; }): void; new(): any; }; }; }) {
+export default async function handler(req: { method: string; body: { name: any; email: any; phone: any; averageValue: string; consumption: string; substation: string; knowledge: string }; }, res: { status: (arg0: number) => { (): any; new(): any; json: { (arg0: { message: string; }): void; new(): any; }; }; }) {
     if (req.method === 'POST') {
-        const { name, email, phone } = req.body;
-        handle_agendor_form_submission({ name, email, phone })
+        const { name, email, phone, averageValue, consumption, substation, knowledge } = req.body;
+        handle_agendor_form_submission({ name, email, phone, averageValue, consumption, substation, knowledge })
 
         const mailOptions = {
             from: 'Expertise Energia Solar <vendas@expertiseenergia.com.br>',
@@ -161,7 +161,7 @@ export default async function handler(req: { method: string; body: { name: any; 
                                 </span><br><br>
   <span style="font-family:sans-serif">
                                 
-                                                                                       <strong>(92)98600-3968</strong></span>
+                                                                                       <strong>(92) 98451-2299</strong></span>
   </p>
                                                                               </td>
                                                                           </tr>
@@ -274,7 +274,7 @@ export default async function handler(req: { method: string; body: { name: any; 
     }
 }
 
-async function handle_agendor_form_submission({ name, email, phone }: any) {
+async function handle_agendor_form_submission({ name, email, phone, averageValue, consumption, substation, knowledge }: any) {
     try {
         const apiKey = process.env.AGENDOR_API_TOKEN;
         const dataPerson = {
@@ -284,7 +284,17 @@ async function handle_agendor_form_submission({ name, email, phone }: any) {
                 "mobile": phone,
             },
             "leadOrigin": "Site",
+            "customFields": {
+                valor_medio_da_conta_de_luz: averageValue,
+                consumo_medio_em_kwh: consumption,
+                existe_substacao_no_imovel: substation,
+                como_conheceu_a_expertise: knowledge,
+            }
         };
+
+
+
+
 
         const apiUrlPerson = 'https://api.agendor.com.br/v3/people';
         const responsePerson = await fetch(apiUrlPerson, {
