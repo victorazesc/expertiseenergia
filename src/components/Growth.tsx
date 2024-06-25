@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { RxWidth } from "react-icons/rx";
 
 export function Growth() {
   const process = [
@@ -9,7 +10,7 @@ export function Growth() {
       title: "Análise de contas",
       description:
         "Analisamos o seu consumo médio dos últimos 12 meses para determinar a potência necessária para o seu projeto.",
-        alt: "calculator"
+      alt: "calculator",
     },
     {
       id: 2,
@@ -18,7 +19,7 @@ export function Growth() {
       title: "Apresentação da proposta",
       description:
         "Elaboramos uma proposta personalizada que se alinha perfeitamente com as suas necessidades específicas.",
-        alt: "paper"
+      alt: "paper",
     },
     {
       id: 3,
@@ -27,8 +28,8 @@ export function Growth() {
       title: "Fechamento de contrato",
       description:
         "Aqui, reforçamos o nosso compromisso em entregar serviços de alta qualidade, respeitando rigorosamente os prazos estabelecidos.",
-        alt: "writing"
-    },    
+      alt: "writing",
+    },
     {
       id: 4,
       timing: "10 dias",
@@ -36,8 +37,8 @@ export function Growth() {
       title: "Elaboração de projeto",
       description:
         "Nossa equipe de engenharia desenvolve um projeto personalizado para garantir nossa aprovação junto à concessionária de energia.",
-        alt: "bulb"
-    },    
+      alt: "bulb",
+    },
     {
       id: 5,
       timing: "20 dias",
@@ -45,8 +46,8 @@ export function Growth() {
       title: "Homologação da concessionária",
       description:
         "A distribuidora de energia avalia e aprova nosso projeto para instalação, garantindo segurança e eficiência.",
-        alt: "checkit"
-    },    
+      alt: "checkit",
+    },
     {
       id: 6,
       timing: "5 dias",
@@ -54,7 +55,7 @@ export function Growth() {
       title: "Instalação",
       description:
         "Enviamos o kit solar para seu imóvel e realizamos a instalação e ativação, assegurando uma transição tranquila para a energia solar.",
-        alt: "tools"
+      alt: "tools",
     },
   ];
 
@@ -77,7 +78,9 @@ export function Growth() {
               <div>
                 <div className="flex flex-row items-center gap-2">
                   <div>
-                    <p className="font-bold w-12 text-xs text-[#21965E]">{item.timing}</p>
+                    <p className="font-bold w-12 text-xs text-[#21965E]">
+                      {item.timing}
+                    </p>
                   </div>
                   <div className="justify-center flex flex-col items-center w-24 relative">
                     <Image
@@ -90,13 +93,38 @@ export function Growth() {
                   </div>
                   <div>
                     <h3 className="font-bold">{item.title}</h3>
-                    <p>
-                      {item.description}
-                    </p>
+                    <p>{item.description}</p>
                   </div>
                 </div>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+      <section className="container mx-auto grid size-full grid-rows-6 px-4 py-16 gap-16">
+        <div className="flex gap-y-12">
+          <div className="size-max flex flex-col bg-gradient-to-r from-[#A4F4B6] to-[#89EEC4] rounded-3xl px-16 pt-12 gap-x-12 w-[1302px] h-[917px]">
+            <div className="gap-2">
+              <div>
+                <h3 className="text-4xl font-bold">Você só ganha.</h3>
+                <p className="text-lg font-semibold mb-8 pt-2">
+                  Entenda como a energia solar pode impactar sua vida também:
+                </p>
+              </div>
+              <div className="text-center flex flex-col grid-rows-6 items-left bg-white rounded-3xl w-[368px] h-[250px] p-8 shadow-md">
+                <img
+                  src="/images/money.svg"
+                  alt="Money"
+                  className="w-12 h-12 mb-4"
+                />
+                <h5 className="text-2xl font-bold text-left">
+                  Aumento no valor do imóvel
+                </h5>
+                <p className="text-base text-justify">
+                  Propriedades com energia solar são mais valorizadas no mercado
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
