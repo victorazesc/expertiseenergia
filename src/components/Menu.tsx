@@ -21,14 +21,14 @@ export function Menu() {
 		};
 	}, []);
 	return (
-		<header className="redesign-menu flex flex-col sm:flex-row">
+		<header className="redesign-menu md:flex hidden flex-col sm:flex-row">
 			<div className="container mx-auto px-4 flex justify-between">
 				<Image src="/images/Logo-Expertise-preta-R-1.png" width={162} height={36} alt='expertise branca' />
 				{isMobile && <div onClick={handleMenu}>
 					<Image src="/images/sandwich.svg" width={41} height={31} alt='menu' />
 				</div>}
 				{!isMobile && <ul className='flex'>
-					<li><a href="#solutions">SOLUÇÕES</a></li>
+					<li><a href="#how-it-works">SOLUÇÕES</a></li>
 					<li><a href="#simulate-form">ORÇAMENTO GRATUITO</a></li>
 					<li><a href="#our-clients">CLIENTES</a></li>
 					<li><a href="#advantages">VANTAGENS</a></li>
@@ -38,7 +38,7 @@ export function Menu() {
 			</div>
 			{togleMenu && isMobile && <div className='px-8 py-8'>
 				<ul>
-				    <li className='mt-3'><a href="#solutions">SOLUÇÕES</a></li>
+				    <li className='mt-3'><a href="#how-it-workss">SOLUÇÕES</a></li>
 					<li className='mt-3'><a href="#simulate-form">ORÇAMENTO GRATUITO</a></li>
 					<li className='mt-3'><a href="#our-clients">CLIENTES</a></li>
 					<li className='mt-3'><a href="#advantages">VANTAGENS</a></li>

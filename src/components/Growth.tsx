@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { RxWidth } from "react-icons/rx";
 
 export function Growth() {
   const process = [
@@ -10,7 +9,7 @@ export function Growth() {
       title: "Análise de contas",
       description:
         "Analisamos o seu consumo médio dos últimos 12 meses para determinar a potência necessária para o seu projeto.",
-      alt: "calculator",
+      alt: "calculator"
     },
     {
       id: 2,
@@ -19,7 +18,7 @@ export function Growth() {
       title: "Apresentação da proposta",
       description:
         "Elaboramos uma proposta personalizada que se alinha perfeitamente com as suas necessidades específicas.",
-      alt: "paper",
+      alt: "paper"
     },
     {
       id: 3,
@@ -28,7 +27,7 @@ export function Growth() {
       title: "Fechamento de contrato",
       description:
         "Aqui, reforçamos o nosso compromisso em entregar serviços de alta qualidade, respeitando rigorosamente os prazos estabelecidos.",
-      alt: "writing",
+      alt: "writing"
     },
     {
       id: 4,
@@ -37,7 +36,7 @@ export function Growth() {
       title: "Elaboração de projeto",
       description:
         "Nossa equipe de engenharia desenvolve um projeto personalizado para garantir nossa aprovação junto à concessionária de energia.",
-      alt: "bulb",
+      alt: "bulb"
     },
     {
       id: 5,
@@ -46,7 +45,7 @@ export function Growth() {
       title: "Homologação da concessionária",
       description:
         "A distribuidora de energia avalia e aprova nosso projeto para instalação, garantindo segurança e eficiência.",
-      alt: "checkit",
+      alt: "checkit"
     },
     {
       id: 6,
@@ -55,14 +54,14 @@ export function Growth() {
       title: "Instalação",
       description:
         "Enviamos o kit solar para seu imóvel e realizamos a instalação e ativação, assegurando uma transição tranquila para a energia solar.",
-      alt: "tools",
+      alt: "tools"
     },
   ];
 
   return (
     <>
       <span id="our-work"></span>
-      <section className="bg-[#F5F5F5]">
+      <section className="bg-white px-6 py-12">
         <div className="mx-auto container py-12 relative">
           <div className="grid gap-2 grid-rows-2">
             <h5 className="text text-4xl text-center font-bold">
@@ -73,58 +72,39 @@ export function Growth() {
               projeto:
             </p>
           </div>
-          <div className="flex flex-col items-start ml-48 mr-48 ">
-            {process.map((item) => (
-              <div>
-                <div className="flex flex-row items-center gap-2">
-                  <div>
-                    <p className="font-bold w-12 text-xs text-[#21965E]">
-                      {item.timing}
-                    </p>
-                  </div>
-                  <div className="justify-center flex flex-col items-center w-24 relative">
-                    <Image
-                      src={item.image}
-                      alt={item.alt}
-                      width={70}
-                      height={70}
-                    ></Image>
-                    <span className="border h-6 absolute -bottom-3"></span>
-                  </div>
-                  <div>
-                    <h3 className="font-bold">{item.title}</h3>
-                    <p>{item.description}</p>
-                  </div>
+          <div className="block md:max-w-5xl max-w-md mx-auto ">
+            {process.map((item, index) => (
+              <div className="flex flex-row items-center gap-2 pb-2">
+                <div>
+                  <p className="font-bold md:w-12 w-20 md:text-xs text-[#21965E] text-right">{item.timing}</p>
+                </div>
+                <div className="block relative">
+                  <Image
+                    src={item.image}
+                    alt={item.alt}
+                    width={84}
+                    height={84}
+                  ></Image>
+                  {process.length - 1 !== index && <span className="border h-8 absolute left-9 -bottom-5"></span>}
+                </div>
+                <div className="flex flex-col w-full">
+                  <h3 className="font-bold md:text-md text-lg">{item.title}</h3>
+                  <p className="hidden md:block">
+                    {item.description}
+                  </p>
                 </div>
               </div>
             ))}
           </div>
-        </div>
-      </section>
-      <section className="container mx-auto grid size-full grid-rows-6 px-4 py-16 gap-16">
-        <div className="flex gap-y-12">
-          <div className="size-max flex flex-col bg-gradient-to-r from-[#A4F4B6] to-[#89EEC4] rounded-3xl px-16 pt-12 gap-x-12 w-[1302px] h-[917px]">
-            <div className="gap-2">
-              <div>
-                <h3 className="text-4xl font-bold">Você só ganha.</h3>
-                <p className="text-lg font-semibold mb-8 pt-2">
-                  Entenda como a energia solar pode impactar sua vida também:
-                </p>
-              </div>
-              <div className="text-center flex flex-col grid-rows-6 items-left bg-white rounded-3xl w-[368px] h-[250px] p-8 shadow-md">
-                <img
-                  src="/images/money.svg"
-                  alt="Money"
-                  className="w-12 h-12 mb-4"
-                />
-                <h5 className="text-2xl font-bold text-left">
-                  Aumento no valor do imóvel
-                </h5>
-                <p className="text-base text-justify">
-                  Propriedades com energia solar são mais valorizadas no mercado
-                </p>
-              </div>
-            </div>
+          <div className="max-w-6xl mx-auto border border-[#BCD2C1] rounded-3xl flex items-center px-6 py-3 mt-4">
+            <div className="font-bold md:w-12 w-20 text-right md:text-xs text-[#21965E]">Até 45 dias</div>
+            <div> <Image
+              src={"/images/house-check.svg"}
+              alt={'house'}
+              width={70}
+              height={70}
+            /></div>
+            <div className="font-bold md:text-md text-lg">Projeto entregue e instalado</div>
           </div>
         </div>
       </section>

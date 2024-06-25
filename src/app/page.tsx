@@ -14,6 +14,7 @@ import { HowItWorks } from '@/components/HowItWorks';
 import { Footer } from '@/components/Footer';
 import TagManager from 'react-gtm-module';
 import { useRouter } from 'next/navigation';
+import { Advantages } from '@/components/Advantages';
 
 function Home() {
   const router = useRouter();
@@ -41,6 +42,7 @@ function Home() {
         <Agendor mobile={isMobile} />
         <Testimonials showVideoModal={showVideoModal} />
         <Growth />
+        <Advantages/>
         {showModal &&
           <Modal activeTestimonial={activeTestimonial} setShowModal={setShowModal}></Modal>
         }
