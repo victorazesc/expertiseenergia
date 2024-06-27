@@ -92,7 +92,7 @@ const ContentToggle = () => {
     };
 
     return (
-        <div onClick={handleClick} >
+        <div>
             <div className='block md:hidden'>
                 {!isVisible &&
                     <button onClick={handleClick} type='button' className="text-[#169576] font-bold  w-full md:hidden block ">
