@@ -2,7 +2,6 @@
 import Head from "next/head"
 import "./globals.css"
 import 'slick-carousel/slick/slick.css';
-// import 'slick-carousel/slick/slick-theme.css';
 
 import { FacebookPixelEvents } from "@/components/PixelEvents"
 import { Suspense } from "react"
