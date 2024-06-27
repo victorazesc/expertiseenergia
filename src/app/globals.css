@@ -303,3 +303,23 @@ button[type="submit"]:hover {
 	background: linear-gradient(90deg, #A4F4B6 0%, #89EEC4 100%);
 	border-radius: 40px;
 }
+
+.slide-dots {
+	display: flex !important;
+    justify-content: center;
+	gap: 10px
+}
+
+.slide-dots .slick-active button{
+	background: #21965E;
+}
+
+.slide-dots li button{
+	width: 10px;
+	height: 10px;
+	display: flex;
+	padding: 4px;
+	background: white;
+	border-radius: 200px;
+	content-visibility: hidden;
+}
