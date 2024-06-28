@@ -63,6 +63,8 @@ const ContentToggle = () => {
         email: Yup.string().email('Email invalido!').required('O email é obrigatório'),
         averageValue: Yup.string()
             .required('Digite um valor!'),
+        consumption: Yup.string()
+            .required('Digite um valor!'),
         substation: Yup.string().required('Selecione uma opção!'),
         knowledge: Yup.string().required('Selecione uma opção!'),
     });
@@ -165,7 +167,7 @@ const ContentToggle = () => {
                                     <label htmlFor="name">Consumo médio em kWh</label>
                                     <Field name="consumption" component={ConsumptionInput} placeholder="0 kWh" />
 
-                                    {errors.phone && touched.phone && <div className='text-red-400 text-sm -mt-5'>{errors.phone}</div>}
+                                    {errors.consumption && touched.consumption && <div className='text-red-400 text-sm -mt-5'>{errors.consumption}</div>}
 
                                     <label className="block text-gray-700 font-medium mb-2">Há subestação de energia no imóvel?</label>
                                     <div className="flex items-center space-x-4">

@@ -8,7 +8,7 @@ interface CurrencyInputProps {
 }
 
 const formatCurrency = (value: string): string => {
-  if (!value) return 'R$ 0,00';
+  if (!value) return 'R$ ';
   return 'R$ ' + value
     .replace(/\D/g, '')
     .replace(/(\d{1,2})$/, ',$1')
