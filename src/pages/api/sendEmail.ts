@@ -274,7 +274,7 @@ export default async function handler(req: { method: string; body: { name: any; 
     }
 }
 
-async function handle_agendor_form_submission({ name, email, phone, averageValue, consumption, substation, knowledge }: any) {
+async function handle_agendor_form_submission({ name, email, phone, averageValue, consumption, substation, knowledge, homeType }: any) {
     try {
         const apiKey = process.env.AGENDOR_API_TOKEN;
         const dataPerson = {
@@ -285,14 +285,13 @@ async function handle_agendor_form_submission({ name, email, phone, averageValue
             },
             "leadOrigin": "Site",
             "customFields": {
+                tipo_de_imovel: homeType,
                 valor_medio_da_conta_de_luz: averageValue,
                 consumo_medio_em_kwh: consumption,
                 existe_substacao_no_imovel: substation,
                 como_conheceu_a_expertise: knowledge,
             }
         };
-
-
 
 
 

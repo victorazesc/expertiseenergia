@@ -66,6 +66,7 @@ const ContentToggle = () => {
         consumption: Yup.string()
             .required('Digite um valor!'),
         substation: Yup.string().required('Selecione uma opção!'),
+        homeType: Yup.string().required('Selecione uma opção!'),
         knowledge: Yup.string().required('Selecione uma opção!'),
     });
 
@@ -123,8 +124,8 @@ const ContentToggle = () => {
                                 averageValue: '',
                                 consumption: '',
                                 substation: '',
-                                knowledge: ''
-
+                                knowledge: '',
+                                homeType: ''
                             }}
                             onSubmit={async (values) => {
                                 handleSubmit(values)
@@ -157,7 +158,24 @@ const ContentToggle = () => {
                                     />
                                     {errors.phone && touched.phone && <div className='text-red-400 text-sm -mt-5 mb-5'>{errors.phone}</div>}
                                     <p className='-mt-5 text-sm font-light'>Deixe o seu telefone WhatsApp para que um de nossos especialistas entre em contato</p>
+                                    
+                                    <div className='pt-4 shrink-0 relative'>
+                                        <label className="block text-gray-700 font-medium mb-2">Tipo de imóvel</label>
+                                        <div className="flex items-center space-x-4">
+                                            <label className="custom-radio">
+                                                <Field type="radio" name="substation" value="Casa" className="form-radio" />
+                                                <span className="radio-btn"></span>
+                                                Casa
+                                            </label>
 
+                                            <label className="custom-radio">
+                                                <Field type="radio" name="substation" value="Apartamento" className="form-radio" />
+                                                <span className="radio-btn"></span>
+                                                Apartamento
+                                            </label>
+                                        </div>
+                                        {errors.substation && touched.substation && <div className='text-red-400 text-sm mt-0'>{errors.substation}</div>}
+                                    </div>
                                     <div className='pt-4 flex flex-col'>
                                         <label htmlFor="name">Valor médio da conta de luz</label>
                                         <Field name="averageValue" component={CurrencyInput} placeholder="R$ 0,00" />
