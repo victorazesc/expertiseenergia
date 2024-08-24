@@ -25,7 +25,7 @@ export function Footer() {
                         <span>Manaus</span>
                         <div className="flex items-center">
                             <Image src="/images/Frame-116.png" className="h-4" width={16} height={17} alt="whatsapp" />
-                            <a href="https://wa.me/5592986003968">(92) 98600-3968</a>
+                            <a href="https://wa.me/559284512299">(92) 8451-2299</a>
                         </div>
                         <div className="redesign__footer-location-item-details">
                             <Image src="/images/Frame-115.png" width={16} height={51} alt="endereço" />
