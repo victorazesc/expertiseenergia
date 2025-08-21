@@ -1,0 +1,50 @@
+<table align="center" cellpadding="0" cellspacing="0" width="100%" style="background:#f6f7fb">
+    <tr>
+      <td align="center">
+        <table cellpadding="0" cellspacing="0" width="640" style="max-width:640px;width:100%; background:#ffffff; border-radius:10px; overflow:hidden; box-shadow:0 6px 24px rgba(0,0,0,.06);">
+          <tr>
+            <td style="padding:20px; background: #fff;">
+              <table width="100%">
+                <tr>
+                  <td align="left">
+                    <img src="https://expertiseenergia.com.br/images/expertise-logo.png" alt="Expertise Energia" width="160" style="display:block;border:0;outline:none;height:auto;max-width:160px" />
+                  </td>
+                  <td align="right" style="font-family:Helvetica,Arial,sans-serif; color:#000; font-size:20px;">
+                    Novo lead do site
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <tr>
+            <td style="padding:18px 20px; font-family:Helvetica,Arial,sans-serif; color:#222;">
+              <h2 style="margin:0 0 6px 0; font-size:18px;">Detalhes do Lead</h2>
+              <p style="margin:0; color:#666; font-size:13px;">Recebemos um novo lead através do formulário do site.</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td style="padding:0 20px 20px 20px;">
+              <table cellpadding="0" cellspacing="0" width="100%" style="border-collapse:collapse; background:#fafafa; border:1px solid #eee;">
+                ${row("Nome", payload.name)}
+                ${row("E-mail", payload.email)}
+                ${row("Telefone", payload.phone)}
+                ${row("Tipo de imóvel", payload.homeType)}
+                ${row("Valor médio da conta (R$)", payload.averageValue)}
+                ${row("Consumo médio (kWh)", payload.consumption)}
+                ${row("Há subestação no imóvel?", payload.substation)}
+                ${row("Como nos conheceu", payload.knowledge)}
+              </table>
+            </td>
+          </tr>
+
+          <tr>
+            <td style="padding:14px 20px; font-family:Helvetica,Arial,sans-serif; color:#888; font-size:11px; background:#ffffff; border-top:1px solid #eee;">
+              <em>Este e-mail foi gerado automaticamente pelo site.</em>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>

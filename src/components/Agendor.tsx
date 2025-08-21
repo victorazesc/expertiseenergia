@@ -72,6 +72,7 @@ const ContentToggle = () => {
 
 
     const handleSubmit = async (e: any) => {
+        console.log(e);
         try {
             setLoadingButton(true)
             const response = await fetch('/api/sendEmail', {
@@ -163,18 +164,18 @@ const ContentToggle = () => {
                                         <label className="block text-gray-700 font-medium mb-2">Tipo de imóvel</label>
                                         <div className="flex items-center space-x-4">
                                             <label className="custom-radio">
-                                                <Field type="radio" name="substation" value="Casa" className="form-radio" />
+                                                <Field type="radio" name="homeType" value="Casa" className="form-radio" />
                                                 <span className="radio-btn"></span>
                                                 Casa
                                             </label>
 
                                             <label className="custom-radio">
-                                                <Field type="radio" name="substation" value="Apartamento" className="form-radio" />
+                                                <Field type="radio" name="homeType" value="Apartamento" className="form-radio" />
                                                 <span className="radio-btn"></span>
                                                 Apartamento
                                             </label>
                                         </div>
-                                        {errors.substation && touched.substation && <div className='text-red-400 text-sm mt-0'>{errors.substation}</div>}
+                                        {errors.homeType && touched.homeType && <div className='text-red-400 text-sm mt-0'>{errors.homeType}</div>}
                                     </div>
                                     <div className='pt-4 flex flex-col'>
                                         <label htmlFor="name">Valor médio da conta de luz</label>
