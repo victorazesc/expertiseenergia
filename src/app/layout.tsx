@@ -43,6 +43,7 @@ export default function RootLayout({
           src="https://d335luupugsy2.cloudfront.net/js/loader-scripts/ca5ed3b1-b319-4b84-b8f1-602cc1126b7a-loader.js"
         />
         <script
+          type="text/javascript"
           defer
           data-website-id="Pxu9U5UPv4MqPOoesjYP3"
           data-domain="www.expertiseenergia.com.br"
