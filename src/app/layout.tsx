@@ -19,7 +19,14 @@ export default function RootLayout({
 
   return (
     <html lang="en">
-
+      <Script
+        src="https://track-mint.vercel.app/js/script.js"
+        defer
+        data-website-id="Pxu9U5UPv4MqPOoesjYP3"
+        data-domain="www.expertiseenergia.com.br"
+        data-debug="true"
+        strategy="afterInteractive"
+      />
       <Head>
 
         <script
@@ -44,14 +51,6 @@ export default function RootLayout({
           async
           src="https://d335luupugsy2.cloudfront.net/js/loader-scripts/ca5ed3b1-b319-4b84-b8f1-602cc1126b7a-loader.js"
         />
-        <script
-          type="text/javascript"
-          async
-          defer
-          data-website-id="Pxu9U5UPv4MqPOoesjYP3"
-          data-domain="www.expertiseenergia.com.br"
-          src="https://track-mint.vercel.app/js/script.js">
-        </script>
 
       </Head>
       <body>
