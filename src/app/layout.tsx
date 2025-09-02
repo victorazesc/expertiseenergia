@@ -5,6 +5,7 @@ import 'slick-carousel/slick/slick.css';
 
 import { FacebookPixelEvents } from "@/components/PixelEvents"
 import { Suspense } from "react"
+import Script from "next/script";
 export const metadata = {
   title: 'Expertise Solar',
   description: '',
@@ -18,6 +19,7 @@ export default function RootLayout({
 
   return (
     <html lang="en">
+
       <Head>
 
         <script
@@ -44,6 +46,7 @@ export default function RootLayout({
         />
         <script
           type="text/javascript"
+          async
           defer
           data-website-id="Pxu9U5UPv4MqPOoesjYP3"
           data-domain="www.expertiseenergia.com.br"
