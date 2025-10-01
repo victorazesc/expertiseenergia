@@ -20,10 +20,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <Script
-        src="https://track-mint.vercel.app/js/script.js"
+        src="https://www.trackmint.app/js/script.js"
         defer
-        data-website-id="Pxu9U5UPv4MqPOoesjYP3"
-        data-domain="www.expertiseenergia.com.br"
+        data-website-id="_Vo-Pp8MfMy8DD5myN2Kl"
+        data-domain="appseed.com.br"
         data-debug="true"
         strategy="afterInteractive"
       />
